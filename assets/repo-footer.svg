@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-labelledby="title desc">
+  <title id="title">Repository footer wave</title>
+  <desc id="desc">Dark teal footer wave.</desc>
+  <defs>
+    <linearGradient id="footerBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="52%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" fill="#020617"/>
+  <path d="M0 72 C150 32 280 118 430 72 S730 18 900 68 S1080 120 1200 68 L1200 120 L0 120 Z" fill="url(#footerBg)" opacity="0.95"/>
+</svg>
+

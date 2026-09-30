@@ -1,0 +1,27 @@
+name: Repository health
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        run: |
+          test -f README.md
+          test -f docs/architecture.md
+          test -f src/script-includes/FollowupUtils.js
+          test -f src/client/team-overview/TeamApp.tsx
+
+      - name: Check for obvious private placeholders
+        run: |
+          ! grep -RInE "https?://[^ ]*service-now\\.com|sys_id=|password\\s*=|secret\\s*=|token\\s*=" README.md docs src || exit 1

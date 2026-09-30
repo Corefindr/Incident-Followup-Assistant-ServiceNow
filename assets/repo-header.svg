@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Incident Follow-up Assistant for ServiceNow</title>
+  <desc id="desc">Dark themed project header for a ServiceNow incident follow-up assistant.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="44%" stop-color="#0f3f66"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="76%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#pulse)"/>
+  <g opacity="0.2" stroke="#a5f3fc" fill="none">
+    <path d="M80 218 C190 116 330 238 470 140 S760 60 1040 168" stroke-width="2"/>
+    <path d="M40 248 C210 168 340 270 520 188 S820 104 1140 216" stroke-width="2"/>
+    <path d="M210 78 H410 V128 H580 V92 H770 V148 H990" stroke-width="3"/>
+  </g>
+  <g font-family="Segoe UI, Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="118" fill="#ffffff" font-size="48" font-weight="700">Incident Follow-up Assistant</text>
+    <text x="600" y="164" fill="#dffcff" font-size="27" font-weight="600">ServiceNow Scoped App | ITSM | Agent Productivity</text>
+    <text x="600" y="204" fill="#bfdbfe" font-size="20" font-weight="500">Automated Awaiting Caller follow-ups, reminders, work notes, and manager visibility</text>
+  </g>
+  <g transform="translate(285 236)" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="0" y="0" width="170" height="34" rx="17" fill="#0f172a" opacity="0.76"/>
+    <text x="85" y="23" fill="#a5f3fc">Upcoming</text>
+    <rect x="190" y="0" width="150" height="34" rx="17" fill="#0f172a" opacity="0.76"/>
+    <text x="265" y="23" fill="#fde68a">Due</text>
+    <rect x="360" y="0" width="160" height="34" rx="17" fill="#0f172a" opacity="0.76"/>
+    <text x="440" y="23" fill="#fecaca">Overdue</text>
+    <rect x="540" y="0" width="190" height="34" rx="17" fill="#0f172a" opacity="0.76"/>
+    <text x="635" y="23" fill="#ccfbf1">Team Dashboard</text>
+  </g>
+</svg>
+

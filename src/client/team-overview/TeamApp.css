@@ -1,0 +1,154 @@
+:root {
+  color-scheme: dark light;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.team-app {
+  min-height: 100vh;
+  background: #07111f;
+  color: #e5f5ff;
+  padding: 24px;
+}
+
+.team-app__header {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin: 0 auto 24px;
+  max-width: 1120px;
+}
+
+.team-app__header p {
+  color: #67e8f9;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+
+.team-app__header h1 {
+  font-size: 28px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.team-app__header select {
+  background: #0f172a;
+  border: 1px solid #1e3a5f;
+  border-radius: 8px;
+  color: #e5f5ff;
+  min-height: 40px;
+  padding: 0 12px;
+}
+
+.metric-grid,
+.followup-list {
+  display: grid;
+  gap: 12px;
+  margin: 0 auto 20px;
+  max-width: 1120px;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.metric-grid > div,
+.followup-card {
+  background: #0f172a;
+  border: 1px solid #1f3b57;
+  border-radius: 8px;
+}
+
+.metric-grid > div {
+  padding: 16px;
+}
+
+.metric-grid span {
+  color: #9fb6ca;
+  display: block;
+  font-size: 13px;
+}
+
+.metric-grid strong {
+  display: block;
+  font-size: 28px;
+  margin-top: 6px;
+}
+
+.followup-list {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.followup-card {
+  padding: 16px;
+}
+
+.followup-card > div:first-child {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.followup-card h3 {
+  font-size: 17px;
+  line-height: 1.35;
+  margin: 12px 0;
+}
+
+.followup-card dl {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+}
+
+.followup-card dt {
+  color: #9fb6ca;
+  font-size: 12px;
+}
+
+.followup-card dd {
+  margin: 2px 0 0;
+}
+
+.followup-card__incident {
+  color: #67e8f9;
+  font-weight: 700;
+}
+
+.followup-card__status {
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+
+.followup-card--upcoming .followup-card__status {
+  background: #123f61;
+  color: #bae6fd;
+}
+
+.followup-card--due .followup-card__status {
+  background: #573f10;
+  color: #fde68a;
+}
+
+.followup-card--overdue .followup-card__status {
+  background: #5f1d1d;
+  color: #fecaca;
+}
+
+@media (max-width: 640px) {
+  .team-app {
+    padding: 16px;
+  }
+
+  .team-app__header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
